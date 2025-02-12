@@ -79,6 +79,7 @@
     </Publisher>
     <RootComponents>
       <RootComponent type="1" schemaName="cr56c_employee" behavior="0" />
+      <RootComponent type="1" schemaName="crc76_testtableforgit" behavior="0" />
       <RootComponent type="1" schemaName="new_employee" behavior="0" />
       <RootComponent type="29" id="{fb419b90-3cda-ef11-8eea-000d3a32d0d1}" behavior="0" />
       <RootComponent type="80" schemaName="new_EmployeeApp" behavior="0" />
