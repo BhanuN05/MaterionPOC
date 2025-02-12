@@ -28,6 +28,8 @@ env:
   ENVIRONMENT_URL: 'https://org3cdf3e15.crm.dynamics.com/'
   CLIENT_ID: '9a7641c8-d7d2-4cbe-b927-479eb9d33fcb'
   TENANT_ID: 'deb39e2f-69d4-4ef9-92b0-2d83f61c8d57'
+  SOLUTION_NAME: 'Date Format'
+  
 permissions:
   contents: write
 jobs:
@@ -58,21 +60,21 @@ jobs:
         app-id: ${{env.CLIENT_ID}}
         client-secret: ${{ secrets.PowerPlatformSPN }}
         tenant-id: ${{env.TENANT_ID}}
-        solution-name: ${{ github.event.inputs.solution_name }}
-        solution-output-file: ${{ github.event.inputs.solution_exported_folder}}/${{ github.event.inputs.solution_name }}.zip
+        solution-name: ${{ env.SOLUTION_NAME }}
+        solution-output-file: ${{ github.event.inputs.solution_exported_folder}}/${{ env.SOLUTION_NAME }}.zip
 
     - name: unpack-solution action
       uses: microsoft/powerplatform-actions/unpack-solution@v0
       with:
-        solution-file: ${{ github.event.inputs.solution_exported_folder}}/${{ github.event.inputs.solution_name }}.zip
-        solution-folder: ${{ github.event.inputs.solution_folder}}/${{ github.event.inputs.solution_name }}
+        solution-file: ${{ github.event.inputs.solution_exported_folder}}/${{ env.SOLUTION_NAME }}.zip
+        solution-folder: ${{ github.event.inputs.solution_folder}}/${{ env.SOLUTION_NAME }}
         solution-type: 'Unmanaged'
         overwrite-files: true
 
     - name: branch-solution, prepare it for a PullRequest
       uses: microsoft/powerplatform-actions/branch-solution@v0
       with:
-        solution-folder: ${{ github.event.inputs.solution_folder}}/${{ github.event.inputs.solution_name }}
-        solution-target-folder: ${{ github.event.inputs.solution_target_folder}}/${{ github.event.inputs.solution_name }}
+        solution-folder: ${{ github.event.inputs.solution_folder}}/${{ env.SOLUTION_NAME }}
+        solution-target-folder: ${{ github.event.inputs.solution_target_folder}}/${{ env.SOLUTION_NAME }}
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         allow-empty-commit: true
