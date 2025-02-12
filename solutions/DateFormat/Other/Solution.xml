@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.24124.182" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.24124.182" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.24124.00182">
+  <SolutionManifest>
+    <UniqueName>DateFormat</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="Date Format" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.1</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>Cr96a04</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="CDS Default Publisher" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>crc76</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>77225</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode xsi:nil="true"></AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode xsi:nil="true"></ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode xsi:nil="true"></AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode xsi:nil="true"></ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="cr56c_employee" behavior="0" />
+      <RootComponent type="1" schemaName="new_employee" behavior="0" />
+      <RootComponent type="29" id="{fb419b90-3cda-ef11-8eea-000d3a32d0d1}" behavior="0" />
+      <RootComponent type="80" schemaName="new_EmployeeApp" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="cr56c_project" displayName="Project" solution="Active" />
+        <Dependent type="1" schemaName="cr56c_employee" displayName="Employee" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="cr56c_departmentname" displayName="Department Name" parentSchemaName="cr56c_department" parentDisplayName="Department" solution="Active" />
+        <Dependent type="10" schemaName="cr56c_Employee_cr56c_Department" displayName="cr56c_Employee_cr56c_Department" parentSchemaName="cr56c_department" parentDisplayName="Department" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="cr56c_username" displayName="User Name" parentSchemaName="cr56c_user" parentDisplayName="User" solution="Active" />
+        <Dependent type="10" schemaName="new_employee_Employeenumber_cr56c_user" displayName="new_employee_Employeenumber_cr56c_user" parentSchemaName="cr56c_user" parentDisplayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_departmentname" displayName="Department Name" parentSchemaName="new_department" parentDisplayName="Department" solution="Active" />
+        <Dependent type="10" schemaName="new_Employee_new_Department" displayName="new_Employee_new_Department" parentSchemaName="new_department" parentDisplayName="Department" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)">
+          <package appName="AppModule Web Resources Package" version="2.5">AppModuleWebResources (2.5)</package>
+        </Required>
+        <Dependent type="80" schemaName="new_EmployeeApp" displayName="Employee App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="new_GetUser" displayName="new_GetUser" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Employee" id="{704acba6-7882-4b59-8b43-ba8425003362}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="62" schemaName="new_EmployeeApp" solution="Active" />
+        <Dependent type="80" schemaName="new_EmployeeApp" displayName="Employee App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="AppChannel" solution="msdyn_AppFrameworkInfraExtensions (1.0.0.12)" id.uniquename="AppChannel">
+          <package appName="PowerAppsAppFramework Package" version="1.0.0.16">PowerAppsAppFramework_Anchor (1.0.0.16)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=new_EmployeeApp,settingdefinitionid.uniquename=AppChannel" id.parentappmoduleid.uniquename="new_EmployeeApp" id.settingdefinitionid.uniquename="AppChannel" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>
