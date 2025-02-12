@@ -8,7 +8,7 @@ on:
       #Do Not change these values
       #Values are set by the caller
       #caller sample: release-action-call.ymnl
-      solution_name:
+      solution_name: 
         description: 'The solution name.'
         type: string
         default: DateFormat       
@@ -57,7 +57,7 @@ jobs:
       RUNNER_DEBUG: 1
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
       with:
         lfs: true
 
@@ -103,7 +103,7 @@ jobs:
       RUNNER_DEBUG: 1
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
       with:
         lfs: true
 
