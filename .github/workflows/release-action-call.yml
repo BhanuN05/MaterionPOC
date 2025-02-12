@@ -8,11 +8,11 @@ on:
 permissions:
   contents: write
 jobs:
-  Release-solution-ALMLab:
+  Release-solution-DateFormat:
     uses: ./.github/workflows/release-solution-to-prod-with-inputs.yml
     with:
       #You can specify the solution name here
-      solution_name: ALMLab
+      solution_name: DateFormat
       #Update your values here
       BUILD_ENVIRONMENT_URL: https://org3cdf3e15.crm.dynamics.com/
       PRODUCTION_ENVIRONMENT_URL: https://orgb9858df0.crm.dynamics.com/
