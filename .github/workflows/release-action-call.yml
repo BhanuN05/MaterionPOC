@@ -12,7 +12,7 @@ jobs:
     uses: ./.github/workflows/release-solution-to-prod-with-inputs.yml
     with:
       #You can specify the solution name here
-      solution_name: DateFormat
+      solution_name: MaterionGitPOC_Solution
       #Update your values here
       BUILD_ENVIRONMENT_URL: https://org3cdf3e15.crm.dynamics.com/
       PRODUCTION_ENVIRONMENT_URL: https://org53e061e8.crm.dynamics.com/
