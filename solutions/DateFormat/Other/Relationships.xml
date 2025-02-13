@@ -3,18 +3,22 @@
   <EntityRelationship Name="business_unit_cr56c_department" />
   <EntityRelationship Name="business_unit_cr56c_employee" />
   <EntityRelationship Name="business_unit_cr56c_project" />
+  <EntityRelationship Name="business_unit_cr56c_task" />
   <EntityRelationship Name="business_unit_cr56c_user" />
   <EntityRelationship Name="business_unit_crc76_testtableforgit" />
   <EntityRelationship Name="business_unit_new_department" />
   <EntityRelationship Name="business_unit_new_employee" />
   <EntityRelationship Name="cr56c_Employee_cr56c_Department" />
   <EntityRelationship Name="cr56c_Project_cr56c_Employee" />
+  <EntityRelationship Name="cr56c_Task_cr56c_User" />
   <EntityRelationship Name="lk_cr56c_department_createdby" />
   <EntityRelationship Name="lk_cr56c_department_modifiedby" />
   <EntityRelationship Name="lk_cr56c_employee_createdby" />
   <EntityRelationship Name="lk_cr56c_employee_modifiedby" />
   <EntityRelationship Name="lk_cr56c_project_createdby" />
   <EntityRelationship Name="lk_cr56c_project_modifiedby" />
+  <EntityRelationship Name="lk_cr56c_task_createdby" />
+  <EntityRelationship Name="lk_cr56c_task_modifiedby" />
   <EntityRelationship Name="lk_cr56c_user_createdby" />
   <EntityRelationship Name="lk_cr56c_user_modifiedby" />
   <EntityRelationship Name="lk_crc76_testtableforgit_createdby" />
@@ -28,6 +32,7 @@
   <EntityRelationship Name="owner_cr56c_department" />
   <EntityRelationship Name="owner_cr56c_employee" />
   <EntityRelationship Name="owner_cr56c_project" />
+  <EntityRelationship Name="owner_cr56c_task" />
   <EntityRelationship Name="owner_cr56c_user" />
   <EntityRelationship Name="owner_crc76_testtableforgit" />
   <EntityRelationship Name="owner_new_department" />
@@ -35,6 +40,7 @@
   <EntityRelationship Name="team_cr56c_department" />
   <EntityRelationship Name="team_cr56c_employee" />
   <EntityRelationship Name="team_cr56c_project" />
+  <EntityRelationship Name="team_cr56c_task" />
   <EntityRelationship Name="team_cr56c_user" />
   <EntityRelationship Name="team_crc76_testtableforgit" />
   <EntityRelationship Name="team_new_department" />
@@ -43,6 +49,7 @@
   <EntityRelationship Name="user_cr56c_department" />
   <EntityRelationship Name="user_cr56c_employee" />
   <EntityRelationship Name="user_cr56c_project" />
+  <EntityRelationship Name="user_cr56c_task" />
   <EntityRelationship Name="user_cr56c_user" />
   <EntityRelationship Name="user_crc76_testtableforgit" />
   <EntityRelationship Name="user_new_department" />
