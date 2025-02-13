@@ -6,7 +6,7 @@
       <LocalizedName description="MaterionGitPOC_Solution" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.0</Version>
+    <Version>1.0.0.1</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>DefaultPublisherorg3cdf3e15</UniqueName>
@@ -80,20 +80,11 @@
       </Addresses>
     </Publisher>
     <RootComponents>
-      <RootComponent type="1" schemaName="cr56c_user" behavior="0" />
       <RootComponent type="1" schemaName="crc76_testtableforgit" behavior="0" />
       <RootComponent type="62" schemaName="new_SamplePOCAppForGitHub" behavior="0" />
       <RootComponent type="80" schemaName="new_SamplePOCAppForGitHub" behavior="0" />
     </RootComponents>
     <MissingDependencies>
-      <MissingDependency>
-        <Required type="1" schemaName="cr56c_task" displayName="Task" solution="Active" />
-        <Dependent type="1" schemaName="cr56c_user" displayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="new_employee" displayName="Employee" solution="Active" />
-        <Dependent type="1" schemaName="cr56c_user" displayName="User" />
-      </MissingDependency>
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)">
           <package appName="AppModule Web Resources Package" version="2.5">AppModuleWebResources (2.5)</package>

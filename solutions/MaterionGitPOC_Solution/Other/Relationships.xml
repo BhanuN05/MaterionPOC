@@ -1,15 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <EntityRelationship Name="business_unit_cr56c_user" />
   <EntityRelationship Name="business_unit_crc76_testtableforgit" />
-  <EntityRelationship Name="lk_cr56c_user_createdby" />
-  <EntityRelationship Name="lk_cr56c_user_modifiedby" />
   <EntityRelationship Name="lk_crc76_testtableforgit_createdby" />
   <EntityRelationship Name="lk_crc76_testtableforgit_modifiedby" />
-  <EntityRelationship Name="owner_cr56c_user" />
   <EntityRelationship Name="owner_crc76_testtableforgit" />
-  <EntityRelationship Name="team_cr56c_user" />
   <EntityRelationship Name="team_crc76_testtableforgit" />
-  <EntityRelationship Name="user_cr56c_user" />
   <EntityRelationship Name="user_crc76_testtableforgit" />
 </EntityRelationships>
