@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.24124.182" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.24124.182" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.24124.00182">
+<ImportExportXml version="9.2.25012.186" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25012.186" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25012.00186">
   <SolutionManifest>
     <UniqueName>DateFormat</UniqueName>
     <LocalizedNames>
@@ -78,28 +78,19 @@
       </Addresses>
     </Publisher>
     <RootComponents>
+      <RootComponent type="1" schemaName="cr56c_department" behavior="0" />
       <RootComponent type="1" schemaName="cr56c_employee" behavior="0" />
+      <RootComponent type="1" schemaName="cr56c_project" behavior="0" />
       <RootComponent type="1" schemaName="crc76_testtableforgit" behavior="0" />
+      <RootComponent type="1" schemaName="new_department" behavior="0" />
       <RootComponent type="1" schemaName="new_employee" behavior="0" />
       <RootComponent type="29" id="{fb419b90-3cda-ef11-8eea-000d3a32d0d1}" behavior="0" />
       <RootComponent type="80" schemaName="new_EmployeeApp" behavior="0" />
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
-        <Required type="1" schemaName="cr56c_project" displayName="Project" solution="Active" />
-        <Dependent type="1" schemaName="cr56c_employee" displayName="Employee" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="2" schemaName="cr56c_departmentname" displayName="Department Name" parentSchemaName="cr56c_department" parentDisplayName="Department" solution="Active" />
-        <Dependent type="10" schemaName="cr56c_Employee_cr56c_Department" displayName="cr56c_Employee_cr56c_Department" parentSchemaName="cr56c_department" parentDisplayName="Department" />
-      </MissingDependency>
-      <MissingDependency>
         <Required type="2" schemaName="cr56c_username" displayName="User Name" parentSchemaName="cr56c_user" parentDisplayName="User" solution="Active" />
         <Dependent type="10" schemaName="new_employee_Employeenumber_cr56c_user" displayName="new_employee_Employeenumber_cr56c_user" parentSchemaName="cr56c_user" parentDisplayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="2" schemaName="new_departmentname" displayName="Department Name" parentSchemaName="new_department" parentDisplayName="Department" solution="Active" />
-        <Dependent type="10" schemaName="new_Employee_new_Department" displayName="new_Employee_new_Department" parentSchemaName="new_department" parentDisplayName="Department" />
       </MissingDependency>
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)">

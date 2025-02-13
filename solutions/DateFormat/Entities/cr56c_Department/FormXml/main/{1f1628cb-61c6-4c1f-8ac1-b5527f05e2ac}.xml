@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{1f1628cb-61c6-4c1f-8ac1-b5527f05e2ac}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{3a96b8d1-5eaa-4c3f-a53e-11c4be39bd51}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{72ae6dc3-d169-4ffe-a9b1-22f351c52606}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{289e5b27-154a-4ac9-a0af-c320402cd4b9}">
+                        <labels>
+                          <label description="Department Name" languagecode="1033" />
+                        </labels>
+                        <control id="cr56c_departmentname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr56c_departmentname" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{be572122-8f2c-4f5d-b079-0a5d36ef1ce3}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2acc3f29-7570-4675-a2c0-568ed9151f2b}">
+                        <labels>
+                          <label description="Location" languagecode="1033" />
+                        </labels>
+                        <control id="cr56c_location" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="cr56c_location" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>
