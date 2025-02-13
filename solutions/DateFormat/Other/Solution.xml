@@ -87,28 +87,25 @@
       <RootComponent type="1" schemaName="new_department" behavior="0" />
       <RootComponent type="1" schemaName="new_employee" behavior="0" />
       <RootComponent type="29" id="{fb419b90-3cda-ef11-8eea-000d3a32d0d1}" behavior="0" />
-      <RootComponent type="80" schemaName="new_EmployeeApp" behavior="0" />
+      <RootComponent type="62" schemaName="crc76_DateFormatApp" behavior="0" />
+      <RootComponent type="80" schemaName="crc76_DateFormatApp" behavior="0" />
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)">
           <package appName="AppModule Web Resources Package" version="2.5">AppModuleWebResources (2.5)</package>
         </Required>
-        <Dependent type="80" schemaName="new_EmployeeApp" displayName="Employee App" />
+        <Dependent type="80" schemaName="crc76_DateFormatApp" displayName="DateFormatApp" />
       </MissingDependency>
       <MissingDependency>
         <Required type="61" schemaName="new_GetUser" displayName="new_GetUser" solution="Active" />
         <Dependent type="60" displayName="Information" parentDisplayName="Employee" id="{704acba6-7882-4b59-8b43-ba8425003362}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="62" schemaName="new_EmployeeApp" solution="Active" />
-        <Dependent type="80" schemaName="new_EmployeeApp" displayName="Employee App" />
-      </MissingDependency>
-      <MissingDependency>
         <Required type="SettingDefinition" displayName="AppChannel" solution="msdyn_AppFrameworkInfraExtensions (1.0.0.12)" id.uniquename="AppChannel">
           <package appName="PowerAppsAppFramework Package" version="1.0.0.16">PowerAppsAppFramework_Anchor (1.0.0.16)</package>
         </Required>
-        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=new_EmployeeApp,settingdefinitionid.uniquename=AppChannel" id.parentappmoduleid.uniquename="new_EmployeeApp" id.settingdefinitionid.uniquename="AppChannel" />
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=crc76_DateFormatApp,settingdefinitionid.uniquename=AppChannel" id.parentappmoduleid.uniquename="crc76_DateFormatApp" id.settingdefinitionid.uniquename="AppChannel" />
       </MissingDependency>
     </MissingDependencies>
   </SolutionManifest>
