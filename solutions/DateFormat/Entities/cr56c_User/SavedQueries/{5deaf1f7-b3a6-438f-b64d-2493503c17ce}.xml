@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{5deaf1f7-b3a6-438f-b64d-2493503c17ce}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr56c_username" select="1" icon="1" preview="1">
+        <row name="result" id="cr56c_userid">
+          <cell name="cr56c_username" width="300" />
+          <cell name="createdon" width="125" />
+          <cell name="cr56c_email" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr56c_user">
+          <attribute name="cr56c_userid" />
+          <attribute name="cr56c_username" />
+          <attribute name="createdon" />
+          <order attribute="cr56c_username" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr56c_email" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Users" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

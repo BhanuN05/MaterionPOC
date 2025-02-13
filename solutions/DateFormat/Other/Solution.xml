@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.25012.186" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25012.186" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25012.00186">
+<ImportExportXml version="9.2.25012.186" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25012.186" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25012.00190">
   <SolutionManifest>
     <UniqueName>DateFormat</UniqueName>
     <LocalizedNames>
@@ -81,6 +81,7 @@
       <RootComponent type="1" schemaName="cr56c_department" behavior="0" />
       <RootComponent type="1" schemaName="cr56c_employee" behavior="0" />
       <RootComponent type="1" schemaName="cr56c_project" behavior="0" />
+      <RootComponent type="1" schemaName="cr56c_user" behavior="0" />
       <RootComponent type="1" schemaName="crc76_testtableforgit" behavior="0" />
       <RootComponent type="1" schemaName="new_department" behavior="0" />
       <RootComponent type="1" schemaName="new_employee" behavior="0" />
@@ -89,8 +90,8 @@
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
-        <Required type="2" schemaName="cr56c_username" displayName="User Name" parentSchemaName="cr56c_user" parentDisplayName="User" solution="Active" />
-        <Dependent type="10" schemaName="new_employee_Employeenumber_cr56c_user" displayName="new_employee_Employeenumber_cr56c_user" parentSchemaName="cr56c_user" parentDisplayName="User" />
+        <Required type="1" schemaName="cr56c_task" displayName="Task" solution="Active" />
+        <Dependent type="1" schemaName="cr56c_user" displayName="User" />
       </MissingDependency>
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)">
