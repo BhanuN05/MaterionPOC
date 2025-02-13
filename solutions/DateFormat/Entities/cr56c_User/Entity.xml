@@ -1,30 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Entity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Name LocalizedName="Project" OriginalName="Project">cr56c_Project</Name>
+  <Name LocalizedName="User" OriginalName="User">cr56c_User</Name>
   <EntityInfo>
-    <entity Name="cr56c_Project">
+    <entity Name="cr56c_User">
       <LocalizedNames>
-        <LocalizedName description="Project" languagecode="1033" />
+        <LocalizedName description="User" languagecode="1033" />
       </LocalizedNames>
       <LocalizedCollectionNames>
-        <LocalizedCollectionName description="Projects" languagecode="1033" />
+        <LocalizedCollectionName description="Users" languagecode="1033" />
       </LocalizedCollectionNames>
       <Descriptions>
-        <Description description="This table contains records of project information" languagecode="1033" />
+        <Description description="This table contains records of user information" languagecode="1033" />
       </Descriptions>
       <attributes>
-        <attribute PhysicalName="cr56c_EmployeeID">
-          <Type>lookup</Type>
-          <Name>cr56c_employeeid</Name>
-          <LogicalName>cr56c_employeeid</LogicalName>
+        <attribute PhysicalName="cr56c_Email">
+          <Type>nvarchar</Type>
+          <Name>cr56c_email</Name>
+          <LogicalName>cr56c_email</LogicalName>
           <RequiredLevel>none</RequiredLevel>
-          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <DisplayMask>ValidForForm|ValidForGrid</DisplayMask>
           <ImeMode>auto</ImeMode>
           <ValidForUpdateApi>1</ValidForUpdateApi>
           <ValidForReadApi>1</ValidForReadApi>
           <ValidForCreateApi>1</ValidForCreateApi>
           <IsCustomField>1</IsCustomField>
-          <IsAuditEnabled>0</IsAuditEnabled>
+          <IsAuditEnabled>1</IsAuditEnabled>
           <IsSecured>0</IsSecured>
           <IntroducedVersion>1.0.0.0</IntroducedVersion>
           <IsCustomizable>1</IsCustomizable>
@@ -43,19 +43,20 @@
           <IsFilterable>0</IsFilterable>
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
-          <LookupStyle>single</LookupStyle>
-          <LookupTypes />
+          <Format>email</Format>
+          <MaxLength>100</MaxLength>
+          <Length>200</Length>
           <displaynames>
-            <displayname description="Employee" languagecode="1033" />
+            <displayname description="Email" languagecode="1033" />
           </displaynames>
           <Descriptions>
             <Description description="" languagecode="1033" />
           </Descriptions>
         </attribute>
-        <attribute PhysicalName="cr56c_ProjectId">
+        <attribute PhysicalName="cr56c_UserId">
           <Type>primarykey</Type>
-          <Name>cr56c_projectid</Name>
-          <LogicalName>cr56c_projectid</LogicalName>
+          <Name>cr56c_userid</Name>
+          <LogicalName>cr56c_userid</LogicalName>
           <RequiredLevel>systemrequired</RequiredLevel>
           <DisplayMask>ValidForAdvancedFind|RequiredForGrid</DisplayMask>
           <ImeMode>auto</ImeMode>
@@ -83,16 +84,16 @@
           <IsRetrievable>1</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
           <displaynames>
-            <displayname description="Project" languagecode="1033" />
+            <displayname description="User" languagecode="1033" />
           </displaynames>
           <Descriptions>
             <Description description="Unique identifier for entity instances" languagecode="1033" />
           </Descriptions>
         </attribute>
-        <attribute PhysicalName="cr56c_ProjectName">
+        <attribute PhysicalName="cr56c_UserName">
           <Type>nvarchar</Type>
-          <Name>cr56c_projectname</Name>
-          <LogicalName>cr56c_projectname</LogicalName>
+          <Name>cr56c_username</Name>
+          <LogicalName>cr56c_username</LogicalName>
           <RequiredLevel>required</RequiredLevel>
           <DisplayMask>PrimaryName|ValidForForm|ValidForGrid|RequiredForForm</DisplayMask>
           <ImeMode>auto</ImeMode>
@@ -123,47 +124,7 @@
           <MaxLength>850</MaxLength>
           <Length>1700</Length>
           <displaynames>
-            <displayname description="Project Name" languagecode="1033" />
-          </displaynames>
-          <Descriptions>
-            <Description description="" languagecode="1033" />
-          </Descriptions>
-        </attribute>
-        <attribute PhysicalName="cr56c_StartDate">
-          <Type>datetime</Type>
-          <Name>cr56c_startdate</Name>
-          <LogicalName>cr56c_startdate</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
-          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-          <ImeMode>auto</ImeMode>
-          <ValidForUpdateApi>1</ValidForUpdateApi>
-          <ValidForReadApi>1</ValidForReadApi>
-          <ValidForCreateApi>1</ValidForCreateApi>
-          <IsCustomField>1</IsCustomField>
-          <IsAuditEnabled>1</IsAuditEnabled>
-          <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.0.0.0</IntroducedVersion>
-          <IsCustomizable>1</IsCustomizable>
-          <IsRenameable>1</IsRenameable>
-          <CanModifySearchSettings>1</CanModifySearchSettings>
-          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-          <SourceType>0</SourceType>
-          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-          <IsSortableEnabled>0</IsSortableEnabled>
-          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-          <IsDataSourceSecret>0</IsDataSourceSecret>
-          <AutoNumberFormat></AutoNumberFormat>
-          <IsSearchable>0</IsSearchable>
-          <IsFilterable>0</IsFilterable>
-          <IsRetrievable>0</IsRetrievable>
-          <IsLocalizable>0</IsLocalizable>
-          <Format>date</Format>
-          <CanChangeDateTimeBehavior>1</CanChangeDateTimeBehavior>
-          <Behavior>1</Behavior>
-          <displaynames>
-            <displayname description="Start Date" languagecode="1033" />
+            <displayname description="User Name" languagecode="1033" />
           </displaynames>
           <Descriptions>
             <Description description="" languagecode="1033" />
@@ -674,7 +635,7 @@
           <IsFilterable>1</IsFilterable>
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
-          <optionset Name="cr56c_project_statecode">
+          <optionset Name="cr56c_user_statecode">
             <OptionSetType>state</OptionSetType>
             <IntroducedVersion>1.0</IntroducedVersion>
             <IsCustomizable>1</IsCustomizable>
@@ -682,7 +643,7 @@
               <displayname description="Status" languagecode="1033" />
             </displaynames>
             <Descriptions>
-              <Description description="Status of the Project" languagecode="1033" />
+              <Description description="Status of the User" languagecode="1033" />
             </Descriptions>
             <states>
               <state value="0" defaultstatus="1" invariantname="Active">
@@ -701,7 +662,7 @@
             <displayname description="Status" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="Status of the Project" languagecode="1033" />
+            <Description description="Status of the User" languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="statuscode">
@@ -734,7 +695,7 @@
           <IsFilterable>0</IsFilterable>
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
-          <optionset Name="cr56c_project_statuscode">
+          <optionset Name="cr56c_user_statuscode">
             <OptionSetType>status</OptionSetType>
             <IntroducedVersion>1.0</IntroducedVersion>
             <IsCustomizable>1</IsCustomizable>
@@ -742,7 +703,7 @@
               <displayname description="Status Reason" languagecode="1033" />
             </displaynames>
             <Descriptions>
-              <Description description="Reason for the status of the Project" languagecode="1033" />
+              <Description description="Reason for the status of the User" languagecode="1033" />
             </Descriptions>
             <statuses>
               <status value="1" state="0">
@@ -761,7 +722,7 @@
             <displayname description="Status Reason" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="Reason for the status of the Project" languagecode="1033" />
+            <Description description="Reason for the status of the User" languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="TimeZoneRuleVersionNumber">
@@ -843,8 +804,8 @@
           </Descriptions>
         </attribute>
       </attributes>
-      <EntitySetName>cr56c_projects</EntitySetName>
-      <IsDuplicateCheckSupported>0</IsDuplicateCheckSupported>
+      <EntitySetName>cr56c_users</EntitySetName>
+      <IsDuplicateCheckSupported>1</IsDuplicateCheckSupported>
       <IsBusinessProcessEnabled>0</IsBusinessProcessEnabled>
       <IsRequiredOffline>0</IsRequiredOffline>
       <IsInteractionCentricEnabled>0</IsInteractionCentricEnabled>
@@ -867,7 +828,7 @@
       <IsActivityParty>0</IsActivityParty>
       <IsReplicated>0</IsReplicated>
       <IsReplicationUserFiltered>0</IsReplicationUserFiltered>
-      <IsMailMergeEnabled>0</IsMailMergeEnabled>
+      <IsMailMergeEnabled>1</IsMailMergeEnabled>
       <IsVisibleInMobile>0</IsVisibleInMobile>
       <IsVisibleInMobileClient>0</IsVisibleInMobileClient>
       <IsReadOnlyInMobileClient>0</IsReadOnlyInMobileClient>
